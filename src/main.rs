@@ -12,8 +12,10 @@ fn main() {
 
     let doc = Toml::from_file("./config.toml");
 
-    pos.table.width = doc.get_usize_by_key("table-width").unwrap();
-    pos.table.height = doc.get_usize_by_key("table-height").unwrap();
+    pos.table.set_size(
+        doc.get_usize_by_key("table-width").unwrap(),
+        doc.get_usize_by_key("table-height").unwrap(),
+    );
 
     pos.print();
 }

@@ -1,3 +1,4 @@
+mod cell;
 mod position;
 mod table;
 
@@ -10,11 +11,13 @@ pub struct Position {
 /// Table.  
 /// 表。  
 pub struct Table {
-    pub width: usize,
-    pub height: usize,
-    pub cell: Vec<Cell>,
+    width: usize,
+    height: usize,
+    pub cells: Vec<Cell>,
 }
 
 /// Cell.  
 /// セル。  
-pub struct Cell {}
+pub struct Cell {
+    index: usize,
+}

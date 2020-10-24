@@ -1,15 +1,16 @@
-use crate::toy_box::Board;
+use crate::toy_box::Table;
 
-impl Default for Board {
+impl Default for Table {
     fn default() -> Self {
-        Board {
+        Table {
             width: 0,
             height: 0,
+            cell: Vec::new(),
         }
     }
 }
 
-impl Board {
+impl Table {
     pub fn print(&mut self) {
         self.print_row1();
         for _i in 0..self.height {

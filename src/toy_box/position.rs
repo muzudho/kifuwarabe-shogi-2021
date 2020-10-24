@@ -1,9 +1,9 @@
-use crate::toy_box::{Board, Position};
+use crate::toy_box::{Position, Table};
 
 impl Default for Position {
     fn default() -> Self {
         Position {
-            board: Board::default(),
+            table: Table::default(),
         }
     }
 }
@@ -11,6 +11,6 @@ impl Default for Position {
 impl Position {
     pub fn print(&mut self) {
         println!("Hey!");
-        self.board.print();
+        self.table.print();
     }
 }

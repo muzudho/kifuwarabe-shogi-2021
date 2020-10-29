@@ -10,6 +10,12 @@ impl Default for Position {
 
 impl Position {
     pub fn print(&mut self) {
-        println!("{}", self.table.table());
+        println!(
+            "{}",
+            self.table.table().join(
+                "
+"
+            )
+        );
     }
 }

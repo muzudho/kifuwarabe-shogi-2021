@@ -1,25 +1,15 @@
 use crate::toy_box::Table;
 
 impl Table {
-    pub fn table(&mut self) -> String {
-        let mut s = String::new();
-        s.push_str(&format!(
-            "{}
-{}
-",
-            self.header(),
-            self.row1()
-        ));
+    pub fn table(&mut self) -> Vec<String> {
+        let mut vec = Vec::<String>::new();
+        vec.push(format!("{}", self.header()));
+        vec.push(format!("{}", self.row1()));
         for i in 0..self.height {
-            s.push_str(&format!(
-                "{}
-{}
-",
-                self.row2(i * self.width),
-                self.row1()
-            ));
+            vec.push(format!("{}", self.row2(i * self.width)));
+            vec.push(format!("{}", self.row1()));
         }
-        s
+        vec
     }
 
     fn row1(&mut self) -> String {

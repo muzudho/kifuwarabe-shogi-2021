@@ -9,6 +9,15 @@ impl Table {
             vec.push(format!("{}", self.row2(i * self.width)));
             vec.push(format!("{}", self.row1()));
         }
+
+        // 左側にラベルを追加する９行。
+        for (i, row) in [2, 4, 6, 8, 10, 12, 14, 16, 18].iter().enumerate() {
+            vec[*row] = format!("{: >4} {}", self.row_labels[i], vec[*row]);
+        }
+        // 左側にラベルを追加しない行。
+        for row in &[0, 1, 3, 5, 7, 9, 11, 13, 15, 17, 19] {
+            vec[*row] = format!("     {}", vec[*row]);
+        }
         vec
     }
 

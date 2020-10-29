@@ -20,6 +20,7 @@ fn main() {
         .get_string_array_by_key("column-labels")
         .unwrap()
         .unwrap();
+    pos.table.row_labels = doc.get_string_array_by_key("row-labels").unwrap().unwrap();
 
     pos.print();
 }

@@ -15,7 +15,7 @@ pub struct Table {
     width: usize,
     height: usize,
     pub column_labels: Vec<String>,
-    row_labels: Vec<String>,
+    pub row_labels: Vec<String>,
     pub cells: Vec<Cell>,
 }
 

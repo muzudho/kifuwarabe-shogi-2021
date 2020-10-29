@@ -6,6 +6,8 @@ impl Default for Table {
         Table {
             width: 0,
             height: 0,
+            column_labels: Vec::new(),
+            row_labels: Vec::new(),
             cells: Vec::new(),
         }
     }
@@ -13,6 +15,7 @@ impl Default for Table {
 
 impl Table {
     pub fn print(&mut self) {
+        self.print_header();
         self.print_row1();
         for i in 0..self.height {
             self.print_row2(i * self.width);
@@ -41,6 +44,14 @@ impl Table {
         print!("|");
         for i in 0..self.width {
             print!("{: >4}|", self.cells[first_index + i].get_index());
+        }
+        println!("");
+    }
+
+    fn print_header(&mut self) {
+        print!(" ");
+        for i in 0..self.width {
+            print!("{: >4} ", self.column_labels[i]);
         }
         println!("");
     }

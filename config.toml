@@ -1,2 +1,4 @@
 table-width = 9
 table-height = 9
+column-labels = ['9', '8', '7', '6', '5', '4', '3', '2', '1']
+row-labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']

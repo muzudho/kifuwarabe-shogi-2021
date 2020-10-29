@@ -2,3 +2,45 @@ table-width = 9
 table-height = 9
 column-labels = ['9', '8', '7', '6', '5', '4', '3', '2', '1']
 row-labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+
+[define-piece]
+0 = { phase = "1", front = " 玉 ", back = "    " }
+1 = { phase = "2", front = "v玉 ", back = "    " }
+2 = { phase = "1", front = " 金 ", back = "    " }
+3 = { phase = "2", front = "v金 ", back = "    " }
+4 = { phase = "1", front = " 金 ", back = "    " }
+5 = { phase = "2", front = "v金 ", back = "    " }
+6 = { phase = "1", front = " 銀 ", back = " 全 " }
+7 = { phase = "2", front = "v銀 ", back = "v全 " }
+8 = { phase = "1", front = " 銀 ", back = " 全 " }
+9 = { phase = "2", front = "v銀 ", back = "v全 " }
+10 = { phase = "1", front = " 桂 ", back = " 圭 " }
+11 = { phase = "2", front = "v桂 ", back = "v圭 " }
+12 = { phase = "1", front = " 桂 ", back = " 圭 " }
+13 = { phase = "2", front = "v桂 ", back = "v圭 " }
+14 = { phase = "1", front = " 香 ", back = " 杏 " }
+15 = { phase = "2", front = "v香 ", back = "v杏 " }
+16 = { phase = "1", front = " 香 ", back = " 杏 " }
+17 = { phase = "2", front = "v香 ", back = "v杏 " }
+18 = { phase = "1", front = " 角 ", back = " 馬 " }
+19 = { phase = "2", front = "v角 ", back = "v馬 " }
+20 = { phase = "1", front = " 飛 ", back = " 竜 " }
+21 = { phase = "2", front = "v飛 ", back = "v竜 " }
+22 = { phase = "1", front = " 歩 ", back = " と " }
+23 = { phase = "2", front = "v歩 ", back = "vと " }
+24 = { phase = "1", front = " 歩 ", back = " と " }
+25 = { phase = "2", front = "v歩 ", back = "vと " }
+26 = { phase = "1", front = " 歩 ", back = " と " }
+27 = { phase = "2", front = "v歩 ", back = "vと " }
+28 = { phase = "1", front = " 歩 ", back = " と " }
+29 = { phase = "2", front = "v歩 ", back = "vと " }
+30 = { phase = "1", front = " 歩 ", back = " と " }
+31 = { phase = "2", front = "v歩 ", back = "vと " }
+32 = { phase = "1", front = " 歩 ", back = " と " }
+33 = { phase = "2", front = "v歩 ", back = "vと " }
+34 = { phase = "1", front = " 歩 ", back = " と " }
+35 = { phase = "2", front = "v歩 ", back = "vと " }
+36 = { phase = "1", front = " 歩 ", back = " と " }
+37 = { phase = "2", front = "v歩 ", back = "vと " }
+38 = { phase = "1", front = " 歩 ", back = " と " }
+39 = { phase = "2", front = "v歩 ", back = "vと " }

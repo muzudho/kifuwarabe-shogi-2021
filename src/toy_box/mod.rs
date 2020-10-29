@@ -1,6 +1,7 @@
 mod cell;
 mod position;
 mod table;
+mod table_render;
 
 /// Position.  
 /// 局面。  
